@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 class="mt-3">Contact us</h1>
+    <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> Your data has been sent.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <form action="" class="mt-3">
+        <div class="row">
+            <div class="col-lg-6 mb-3">
+                <input type="text" placeholder="Enter your First name" class="form-control">
+            </div>
+            <div class="col-lg-6">
+                <input type="text" placeholder="Enter your last name" class="form-control" >
+            </div>
+            <div class="col-lg-6" >
+                
+                <input type="email" placeholder="Enter your email" class="form-control" >
+                <a class="btn btn-warning mt-3" (click)="send()">Send</a>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" placeholder="Enter your mobile number" class="form-control" >
+            </div>
+        </div>
+    </form>
+
+
+</div>

@@ -1,0 +1,49 @@
+<div class="banner">
+    
+    <div class="content">
+        
+        <h1>Fresh Cooked Food <br> at your Door.</h1>
+        <a routerLink="menu" class="btn-btn-success">Order now! <i class="bi bi-caret-right"></i></a>
+    </div>
+</div>
+<div class="container mb-5">
+    <h1 class="title">How to get fresh food</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="step-box">
+                <h1>1</h1>
+                <p>Select food</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="step-box">
+                <h1>2</h1>
+                <p>Fill your details</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="step-box">
+                <h1>3</h1>
+                <p>Your order delivered in minute</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------ Food --------------------------->
+<div class="container mb-5">
+    <div class="row">
+        <h1 class="text-center title">Customer favourite orders!</h1>
+        <div class="col-lg-3" *ngFor="let item of foodData; index as i">
+            
+            <div class="food-box" *ngIf="i <= 3">
+                <img src="{{item.foodImg}}" alt="">
+                <h1>{{item.foodName}}</h1>
+                <p>{{item.foodPrice | currency}}</p>
+            </div>
+       
+        </div>
+    </div>
+    <a routerLink="menu" class="view-more">View more <i class="bi bi-caret-right"></i></a>
+</div>

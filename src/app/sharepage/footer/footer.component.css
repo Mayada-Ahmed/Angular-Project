@@ -1,0 +1,28 @@
+.footer{
+    background-color: black;
+    padding: 25px 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 100%;
+}
+h1{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 21px;
+}
+p{
+    font-size: 13px;
+    color: aliceblue;
+}
+i{
+    padding: 0 8px;
+}
+a{
+    font-size: 18px;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    color: var(--primary-color);
+}

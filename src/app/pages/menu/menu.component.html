@@ -1,0 +1,17 @@
+<div class="container mb-5">
+    <div class="row mb-5 mt-5">
+        <!-- <h1 class="text-center title">Customer favourite orders!</h1> -->
+        <div class="col-lg-3" *ngFor="let item of foodData">
+            
+            <div class="food-box">
+                <img src="{{item.foodImg}}" alt="">
+                <h1>{{item.foodName}}</h1>
+                <p>{{item.foodDetails}}</p>
+                <p>{{item.foodPrice | currency}}</p>
+                <a class="order-now" [routerLink]="['/menu',item.id]">Order now</a>
+            </div>
+       
+        </div>
+    </div>
+    <a routerLink="" class="back-to-home">Back to home <i class="bi bi-caret-right"></i></a>
+</div>
